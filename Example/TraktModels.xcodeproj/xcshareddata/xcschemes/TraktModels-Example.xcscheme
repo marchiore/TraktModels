@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "TraktModels.app"
-               BlueprintName = "TraktModels"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "TraktModelsTests.xctest"
+               BlueprintName = "TraktModelsTests"
                ReferencedContainer = "container:TraktModels.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BuildableName = "TraktModelsTests.xctest"
+               BlueprintName = "TraktModelsTests"
                ReferencedContainer = "container:TraktModels.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BuildableName = "TraktModelsTests.xctest"
+               BlueprintName = "TraktModelsTests"
                ReferencedContainer = "container:TraktModels.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TraktModels.app"
-            BlueprintName = "TraktModels"
+            BlueprintIdentifier = "607FACE41AFB9204008FA782"
+            BuildableName = "TraktModelsTests.xctest"
+            BlueprintName = "TraktModelsTests"
             ReferencedContainer = "container:TraktModels.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,9 +76,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TraktModels.app"
-            BlueprintName = "TraktModels"
+            BlueprintIdentifier = "607FACE41AFB9204008FA782"
+            BuildableName = "TraktModelsTests.xctest"
+            BlueprintName = "TraktModelsTests"
             ReferencedContainer = "container:TraktModels.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,9 +95,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "TraktModels.app"
-            BlueprintName = "TraktModels"
+            BlueprintIdentifier = "607FACE41AFB9204008FA782"
+            BuildableName = "TraktModelsTests.xctest"
+            BlueprintName = "TraktModelsTests"
             ReferencedContainer = "container:TraktModels.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
