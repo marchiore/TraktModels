@@ -1,0 +1,29 @@
+PODS:
+  - Argo (1.0.1):
+    - Box (~> 1.2)
+    - Runes (~> 1.2)
+  - Box (1.2.0)
+  - ISO8601DateFormatter (0.7)
+  - Nimble (0.4.2)
+  - Runes (1.2.2)
+  - TraktModels (0.1.0):
+    - Argo (~> 1.0)
+    - ISO8601DateFormatter (~> 0.7)
+
+DEPENDENCIES:
+  - Nimble
+  - TraktModels (from `../`)
+
+EXTERNAL SOURCES:
+  TraktModels:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Argo: 0adbc4433ad29e202875355610d1a03a74928155
+  Box: 3345df1dee5c8cd639a663e368427c51f931d095
+  ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
+  Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
+  Runes: 90c9bba2be981c3777ac490aea0fc0c1acff0f97
+  TraktModels: b63f4bcc031f165dedcb9cb7ae717d07e0eef9fb
+
+COCOAPODS: 0.37.1
