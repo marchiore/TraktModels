@@ -4,9 +4,11 @@
 [![License](https://img.shields.io/cocoapods/l/TraktModels.svg?style=flat)](http://cocoapods.org/pods/TraktModels)
 [![Platform](https://img.shields.io/cocoapods/p/TraktModels.svg?style=flat)](http://cocoapods.org/pods/TraktModels)
 
+[Trakt.tv](http://trakt.tv) models in Swift for using during [Movile](http://www.movile.com) courses.
+
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first. Check the unit tests.
 
 ## Requirements
 
