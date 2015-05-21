@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "TraktModels"
   s.version          = "0.1.0"
-  s.summary          = "A short description of TraktModels."
+  s.summary          = "Trakt.tv models in Swift for using during Movile courses."
   s.homepage         = "https://github.com/marcelofabri/TraktModels"
   s.license          = 'MIT'
   s.author           = { "Marcelo Fabri" => "me@marcelofabri.com" }
