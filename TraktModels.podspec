@@ -2,17 +2,11 @@ Pod::Spec.new do |s|
   s.name             = "TraktModels"
   s.version          = "0.1.0"
   s.summary          = "A short description of TraktModels."
-  s.description      = <<-DESC
-                       An optional longer description of TraktModels
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
   s.homepage         = "https://github.com/marcelofabri/TraktModels"
   s.license          = 'MIT'
   s.author           = { "Marcelo Fabri" => "me@marcelofabri.com" }
   s.source           = { :git => "https://github.com/marcelofabri/TraktModels.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/marcelofabri_
+  s.social_media_url = 'https://twitter.com/marcelofabri_'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
