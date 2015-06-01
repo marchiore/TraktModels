@@ -35,12 +35,9 @@ extension Identifiers: Decodable {
     }
 }
 
-extension NSURL: Decodable {
-    public static func decode(j: JSON) -> Decoded<NSURL> {
-        switch j {
-        case let .String(s): return .fromOptional(NSURL(string: s))
-        default: return .TypeMismatch("\(j) is not a String") // Provide an Error message for a string type mismatch
-        }
+struct JSONParseUtils {
+    static func parseURL(URLString: String?) -> Decoded<NSURL?> {
+        return pure(flatMap(URLString) { NSURL(string: $0) })
     }
 }
 
@@ -70,9 +67,9 @@ extension ImagesURLs: Decodable {
     
     public static func decode(j: JSON) -> Decoded<ImagesURLs> {
         return ImagesURLs.create
-            <^> j <|? "full"
-            <*> j <|? "medium"
-            <*> j <|? "thumb"
+            <^> j <|? "full" >>- JSONParseUtils.parseURL
+            <*> j <|? "medium" >>- JSONParseUtils.parseURL
+            <*> j <|? "thumb" >>- JSONParseUtils.parseURL
     }
 }
 

@@ -65,6 +65,43 @@ class ModelsTests: XCTestCase {
         }
     }
     
+    func testParseImagesURLsWithNilValue() {
+        let json: NSDictionary = [
+            "full": "https://walter.trakt.us/images/episodes/000/036/440/screenshots/original/529938d3cd.jpg?1409354198",
+            "medium": NSNull(),
+            "thumb": "https://walter.trakt.us/images/episodes/000/036/440/screenshots/thumb/529938d3cd.jpg?1409354198"
+        ]
+        
+        let value = JSON.parse(json)
+        let obj = ImagesURLs.decode(value).value
+        
+        expect(obj).toNot(beNil())
+        
+        if let obj = obj {
+            expect(obj.fullImageURL?.absoluteString) == "https://walter.trakt.us/images/episodes/000/036/440/screenshots/original/529938d3cd.jpg?1409354198"
+            expect(obj.mediumImageURL?.absoluteString).to(beNil())
+            expect(obj.thumbImageURL?.absoluteString) == "https://walter.trakt.us/images/episodes/000/036/440/screenshots/thumb/529938d3cd.jpg?1409354198"
+        }
+    }
+    
+    func testParseImagesURLsWithMissingValue() {
+        let json: NSDictionary = [
+            "full": "https://walter.trakt.us/images/episodes/000/036/440/screenshots/original/529938d3cd.jpg?1409354198",
+            "thumb": "https://walter.trakt.us/images/episodes/000/036/440/screenshots/thumb/529938d3cd.jpg?1409354198"
+        ]
+        
+        let value = JSON.parse(json)
+        let obj = ImagesURLs.decode(value).value
+        
+        expect(obj).toNot(beNil())
+        
+        if let obj = obj {
+            expect(obj.fullImageURL?.absoluteString) == "https://walter.trakt.us/images/episodes/000/036/440/screenshots/original/529938d3cd.jpg?1409354198"
+            expect(obj.mediumImageURL?.absoluteString).to(beNil())
+            expect(obj.thumbImageURL?.absoluteString) == "https://walter.trakt.us/images/episodes/000/036/440/screenshots/thumb/529938d3cd.jpg?1409354198"
+        }
+    }
+    
     func testParseEpisode() {
         let json: NSDictionary = [
             "season": 1,

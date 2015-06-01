@@ -15,7 +15,7 @@
 		0C167A5EE5CD24BE21AECAA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		40F0F9654D2BB0E570802FA5 /* Pods-TraktModelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktModelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraktModelsTests/Pods-TraktModelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7086BDD28535D8D63EEC32 /* TraktModels.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TraktModels.podspec; path = ../TraktModels.podspec; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = TraktModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* TraktModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraktModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795A5CD7A1F04F8D35CECA30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9EC83753CD0ED241E4E1E934 /* Pods-TraktModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktModelsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraktModelsTests/Pods-TraktModelsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* TraktModelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			);
 			name = TraktModelsTests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* TraktModelsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
