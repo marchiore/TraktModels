@@ -1,11 +1,11 @@
 PODS:
-  - Argo (1.0.1):
+  - Argo (1.0.3):
     - Box (~> 1.2)
-    - Runes (~> 1.2)
-  - Box (1.2.0)
+    - Runes (>= 1.2.2)
+  - Box (1.2.2)
   - ISO8601DateFormatter (0.7)
   - Nimble (0.4.2)
-  - Runes (1.2.2)
+  - Runes (2.0.0)
   - TraktModels (0.1.0):
     - Argo (~> 1.0)
     - ISO8601DateFormatter (~> 0.7)
@@ -19,11 +19,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Argo: 0adbc4433ad29e202875355610d1a03a74928155
-  Box: 3345df1dee5c8cd639a663e368427c51f931d095
+  Argo: 480471806cf73d4074fcb94751482cd6c139ba3c
+  Box: a92e8aa4c099e6bc0733829665caf9e668ef53b8
   ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
   Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
-  Runes: 90c9bba2be981c3777ac490aea0fc0c1acff0f97
+  Runes: 4fe81355f4620b76b02176222d264b33e60dba51
   TraktModels: 88e18369fe6e9629f9a44be7694b1cd2d69a90b7
 
 COCOAPODS: 0.37.2

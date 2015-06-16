@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'Foundation'
   s.dependency 'Argo', '~> 1.0'
+  s.dependency 'Runes', '~> 2.0'
   s.dependency 'ISO8601DateFormatter', '~> 0.7'
 end
