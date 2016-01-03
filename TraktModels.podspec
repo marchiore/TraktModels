@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/marcelofabri/TraktModels.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/marcelofabri_'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   }
 
   s.frameworks = 'Foundation'
-  s.dependency 'Argo', '~> 1.0'
-  s.dependency 'Runes', '~> 2.0'
+  s.dependency 'Argo', '~> 2.2.0'
+  s.dependency 'Runes', '~> 3.1.0'
   s.dependency 'ISO8601DateFormatter', '~> 0.7'
 end
