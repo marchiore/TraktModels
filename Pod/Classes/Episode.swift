@@ -37,7 +37,7 @@ extension Identifiers: Decodable {
 
 struct JSONParseUtils {
     static func parseURL(URLString: String?) -> Decoded<NSURL?> {
-        return pure(flatMap(URLString) { NSURL(string: $0) })
+        return pure(URLString.flatMap { NSURL(string: $0) })
     }
 }
 
@@ -49,7 +49,7 @@ extension NSDate: Decodable {
     public static func decode(j: JSON) -> Decoded<NSDate> {
         switch j {
         case let .String(s): return .fromOptional(DateFormatterWrapper.dateFormatter.dateFromString(s))
-        default: return .TypeMismatch("\(j) is not a String") // Provide an Error message for a string type mismatch
+        default: return .Failure(DecodeError.TypeMismatch(expected: "\(j) is not a String", actual: "\(j)")) // Provide an Error message for a string type mismatch
         }
     }
 }
