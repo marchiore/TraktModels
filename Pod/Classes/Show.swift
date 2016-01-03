@@ -21,7 +21,7 @@ extension ShowStatus: Decodable {
     public static func decode(j: JSON) -> Decoded<ShowStatus> {
         switch j {
         case let .String(s): return .fromOptional(ShowStatus(rawValue: s))
-        return .Failure(DecodeError.TypeMismatch(expected: "\(j) is not a String", actual: "\(j)"))
+        default: return .Failure(DecodeError.TypeMismatch(expected: "\(j) is not a String", actual: "\(j)"))
         }
     }
 }
